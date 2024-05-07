@@ -17,6 +17,7 @@ void printList()
             printf(" %d ->", aux->data);
             aux = aux->next;
       }
+      printf("\n");
 }
 
 void insertItem(int newItem)
@@ -31,16 +32,15 @@ void insertItem(int newItem)
 void traverseList(struct nodeList *head){
       if(head == NULL)
             return;
-      
+
       printf("%d", head->data);
 
       traverseList(head->next);
+      printf("\n");
 }
-/*
-void insertItemEnd(int data){
-      struct nodeList
-}
-*/
+
+
+
 
 int main(){
 
@@ -48,7 +48,7 @@ int main(){
     insertItem(5);
     insertItem(15);
     insertItem(20);
-    
+
     printList();
 
 
