@@ -27,18 +27,30 @@ class NodeTree:
             self.print_in_order(root.left)
             print(root.value, end = " ")
             self.print_in_order(root.right)
-
-      def check_balance(self, root):
-            left_h = 0, right_h = 0
             
 
+      def tree_high(self, root):
+            left_h, right_h = 0, 0 
+            if root is None:
+                  return 0
+           
+            left_h = self.tree_high(root.left)
+            
+            right_h = self.tree_high(root.right)
+            
+            #print(f"altura esquerda {left_h}")
+            #print(f"altura direita {right_h}")
+            return max(left_h, right_h) + 1 # o 1 do no raiz
 if __name__ == "__main__":
       root = NodeTree(50)
-      root.left = NodeTree( 30)
-      root.right = NodeTree( 70)
+      root.left = NodeTree(30)
+      root.right = NodeTree(70)
       root.left.left = NodeTree( 20)
       root.left.right = NodeTree(40)
-      root.right.left = NodeTree(60)
-      root.right.right = NodeTree( 80)
+     
 
       root.print_in_order(root)
+      print("\n")
+      altura = root.tree_high(root)
+      print(altura)
+
