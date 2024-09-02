@@ -40,6 +40,8 @@ class NodeTree:
             
             #print(f"altura esquerda {left_h}")
             #print(f"altura direita {right_h}")
+            if abs(left_h - right_h) > 1:
+                  return "It is not a search tree"
             return max(left_h, right_h) + 1 # o 1 do no raiz
 if __name__ == "__main__":
       root = NodeTree(50)
