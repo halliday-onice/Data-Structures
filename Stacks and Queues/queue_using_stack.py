@@ -17,8 +17,9 @@ class MyQueue:
         while self.stack1:
             self.stack2.append(self.stack1.pop())
         
+        #puts the new value into the stack1
         self.stack1.append(value)
-        
+        #do the same now but with the other stack 
         while self.stack2:
             self.stack1.append(self.stack2.pop())
         

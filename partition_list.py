@@ -69,17 +69,13 @@ class LinkedList:
             while(aux):
                   next_node = aux.next
                   #print(f"next_node before detaching: {next_node.value if next_node else None}")  # Debugging
-
                   aux.next = None # # Detach the current node
-
                   #print(f"Processing aux: {aux.value}")
-
                   #print(f"aux:{aux.value}")
                   if aux.value < x:
                         prev1.next = aux
                         prev1 = aux #  ??
                         #print(f"prev1: {prev1.value}, prev1.next: {prev1.next.value if prev1.next else None}")
-
                   if aux.value >= x:
                         prev2.next = aux
                         prev2 = aux
