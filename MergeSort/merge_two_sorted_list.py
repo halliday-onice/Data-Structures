@@ -43,16 +43,24 @@ class LinkedList:
         current = dummy #keep track where we are in the new list, 
         
         while self.head is not None and other_list.head is not None:
-            if(self.head < other_list.head):
+            if(self.head.value < other_list.head.value):
                 current.next = self.head
                 self.head = self.head.next
             else:
                 current.next = other_list.head
-                self.other_head = self.head.next
+                other_list.head = other_list.head.next
                     
-            current   = current.next
-            # 
+            current = current.next
+            
+        if self.head is not None:
+            current.next = self.head
+        
+        else:
+            current.next = other_list.head
+            self.tail = other_list.tail
 
+        self.head = dummy.next
+        self.length += other_list.length
 l1 = LinkedList(1)
 l1.append(3)
 l1.append(5)
