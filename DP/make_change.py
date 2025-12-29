@@ -8,6 +8,8 @@ def make_change(n: int):
     return 0
   
   ways = [0] * (n + 1)
+  for way in ways:
+    print(way)
   ways[0] = 1 #there is exactly one way to make change for 0 cents
   for i in coins:
     for amount in range(i, n + 1):
@@ -18,6 +20,6 @@ def make_change(n: int):
 
 
 if __name__ == '__main__':
-  n = 100
+  n = 6
   print(f"Number of ways to make change for {n}:")
   print(make_change(n))

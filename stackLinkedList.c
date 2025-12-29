@@ -32,7 +32,7 @@ void pop()
 
     head = head->next;
 
-    free(temp);
+    free(temp);// libera o topo da pilha
 }
 
 void printStack(struct nodeStack *stack)

@@ -50,7 +50,7 @@ class LinkedList:
       #   | - The 'values' set holds unique items seen so far.|
       #   1 -> 2 -> 3 -> 1 -> 4 -> 2 -> 5
       #   +===================================================+
-      def remove_duplicates(self):
+      def remove_duplicates(self, start_index, end_index):
             
             temp = self.head
             prev = self.head
