@@ -2,7 +2,8 @@
 # move the chips to the same position based on:
 # position[i]: -> position[i] + 2 OR position[i] - 2. COST = 0
 # position[i]: -> position[i] + 1 OR position[i] - 1. COST = 1
-
+#decide "gulosa-mente" que é sempre melhor pagar o custo de mover o menor número de peças possível para economizar no total.
+# VOU OLHAR PARA OS DOIS MONTES E ESCOLHER O MENOR PARA CARREGAR
 #. 0 1 2 3 4
 # [2,2,2,3,3]
 
