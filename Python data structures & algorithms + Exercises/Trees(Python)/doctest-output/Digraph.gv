@@ -1,0 +1,20 @@
+// expressao
+digraph {
+	"+" [label="+"]
+	a [label=a]
+	"+" -> a
+	"*" [label="*"]
+	b [label=b]
+	"*" -> b
+	"-" [label="-"]
+	"/" [label="/"]
+	c [label=c]
+	"/" -> c
+	d [label=d]
+	"/" -> d
+	"-" -> "/"
+	e [label=e]
+	"-" -> e
+	"*" -> "-"
+	"+" -> "*"
+}
