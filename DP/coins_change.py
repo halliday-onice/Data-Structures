@@ -14,15 +14,20 @@
 # 
 
 # 
-
+#memo = {}
 def coins_step(money_amount: int, coins:list):
   if money_amount == 0: #condicao de parada
         return 0
   minimal_coins = float('inf')
+  #if money_amount in memo:
+    #return memo[money_amount]
   for i in coins:  
     if(money_amount - i >= 0):
       
       minimal_coins = min( minimal_coins, 1 + coins_step(money_amount - i, coins))
+      print(f"Valor {money_amount}: Testei moeda {i}, recorde atual: {minimal_coins}")
+  
+  #memo[i] = minimal_coins
   print("minimal coins", minimal_coins)
   return minimal_coins
 
