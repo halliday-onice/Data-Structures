@@ -8,7 +8,7 @@ def two_sum(nums: list, target:int):
     sum_up = {}
     for i in range(len(nums)):
         if target - nums[i] in sum_up : #busca se o numero que falta esta no dicionario
-            return [i, sum_up[target - nums[i]] ]
+            return [sum_up[target - nums[i]], i]
         sum_up[nums[i]] = i # Dessa forma, o dicionário vai saber rapidamente se um número já foi visto (usando a chave) e em qual posição ele estava na lista (usando o valor)
     return []
 print(two_sum([5, 1, 7, 2, 9, 3], 10))  
@@ -35,5 +35,4 @@ print ( two_sum([], 0) )
     []
 
 """
-
 
