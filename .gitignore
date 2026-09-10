@@ -60,3 +60,45 @@ obj/
 *.temp
 tmp/
 temp/
+
+# Finder duplicate names
+* 2.*
+* 3.*
+
+# Old loose files kept locally but not published at repo root
+/LL_constructor.py
+/Q1IBM.py
+/SOLUTION-LL-Insert.py
+/binary_search_test.py
+/binary_to_decimal.py
+/bstree
+/bstree.cpp
+/bynarysearch.py
+/dicionario.c
+/djikstra.cpp
+/djikstra.textClipping
+/find_k_from_end.py
+/find_middle_node.py
+/has_loop.py
+/headlinkedlist.py
+/inOrderTraversal.c
+/in_order_traversal.py
+/index.html
+/insertNthpositionLinkedList.c
+/linkedList.c
+/linkedListEnd.c
+/linkedListTest.py
+/linkedLists.py
+/list_enc_nao_ordJurair.c
+/max_in_BST.c
+/partition_list.py
+/postOrdem.c
+/preOrderTraversal copy.c
+/preOrderTraversal.c
+/pre_order_traversal.py
+/remove_duplicates.py
+/reverse_LL.py
+/reverse_between.py
+/stack
+/stack.c
+/stackLinkedList.c
