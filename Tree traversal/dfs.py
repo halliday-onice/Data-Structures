@@ -1,4 +1,4 @@
-
+#Normally used if we want to visit every single node in the graph
 class Node:
   def __init__(self, value):
       self.value = value

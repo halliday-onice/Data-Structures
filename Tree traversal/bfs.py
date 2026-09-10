@@ -1,3 +1,5 @@
+#It is used mostly if we want to find any path between two node
+
 class Node:
     def __init__(self, value):
         self.value = value
